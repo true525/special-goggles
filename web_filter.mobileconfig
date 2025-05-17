@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadDescription</key>
+            <string>ウェブコンテンツフィルター設定</string>
+            <key>PayloadDisplayName</key>
+            <string>ウェブコンテンツフィルター</string>
+            <key>PayloadIdentifier</key>
+            <string>com.example.webcontent</string>
+            <key>PayloadType</key>
+            <string>com.apple.webcontent-filter</string>
+            <key>PayloadUUID</key>
+            <string>A1B2C3D4-E5F6-7890-A1B2-C3D4E5F67890</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>FilterBrowsers</key>
+            <true/>
+            <key>FilterType</key>
+            <string>BuiltIn</string>
+            <key>BlacklistedURLs</key>
+            <array>
+                <string>google.com</string>
+                <!-- ブロックしたい特定のサイトをここに追加 -->
+            </array>
+            <key>AutoFilterEnabled</key>
+            <true/>
+            <key>FilterDataProviderBundleIdentifier</key>
+            <string>com.apple.webcontent-filter</string>
+            <key>FilterDataProviderDesignatedRequirement</key>
+            <string>identifier "com.apple.webcontent-filter" and anchor apple</string>
+            <key>FilterPacketsEnabled</key>
+            <true/>
+            <key>ContentFilterSettings</key>
+            <dict>
+                <key>FilterLevel</key>
+                <string>LIMIT_ADULT</string>
+                <key>PermitNavigationToBlacklistedURLs</key>
+                <false/>
+            </dict>
+        </dict>
+    </array>
+    <key>PayloadDescription</key>
+    <string>アダルトコンテンツと特定サイトをブロックするプロファイル</string>
+    <key>PayloadDisplayName</key>
+    <string>ウェブコンテンツ制限</string>
+    <key>PayloadIdentifier</key>
+    <string>com.example.childwebsafety</string>
+    <key>PayloadOrganization</key>
+    <string>ご家庭用</string>
+    <key>PayloadRemovalDisallowed</key>
+    <true/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>E7F8D9C0-A1B2-C3D4-E5F6-G7H8I9J0K1L2</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
